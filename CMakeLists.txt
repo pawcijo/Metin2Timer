@@ -7,6 +7,14 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
+#Set path for windows
+
+
+#Set cmake that works with Qt
+if(WIN32)
+set(CMAKE_PREFIX_PATH "C:/Qt/6.9.0/msvc2022_64/lib/cmake")
+ENDIF()
+
 # Find Qt6 Widgets
 find_package(Qt6 REQUIRED COMPONENTS Widgets Multimedia)
 
