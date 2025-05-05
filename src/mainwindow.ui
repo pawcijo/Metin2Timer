@@ -1,0 +1,102 @@
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Metin2Timer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="buttonSetTime">
+      <property name="text">
+       <string>Ustawiona godzina: --:--:--</string>
+      </property>
+      <property name="toolTip">
+       <string>Ustaw nowy czas</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+    <widget class="QPushButton" name="pushButtonSelectSound">
+        <property name="text">
+            <string>Wybierz dzwięk alarmu</string>
+        </property>
+    </widget>
+</item>
+     <item>
+<widget class="QLabel" name="CurrentTimeDisplay">
+  <property name="text">
+    <string>Godzina: --:--:--</string>
+  </property>
+  <property name="toolTip">
+    <string>Displays the current time</string>
+  </property>
+</widget>
+    </item>
+    <!-- Add this QLabel for displaying the current time -->
+    <item>
+     <widget class="QLabel" name="labelCurrentTime">
+      <property name="text">
+       <string>Ustawiony czas --:--:--</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBoxTimes">
+      <property name="title">
+       <string>Respy</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayoutCheckBoxes">
+         <item><widget class="QCheckBox" name="checkBox_2min"><property name="text"><string>2 min</string></property></widget></item>
+         <item><widget class="QCheckBox" name="checkBox_3min"><property name="text"><string>3 min</string></property></widget></item>
+         <item><widget class="QCheckBox" name="checkBox_5min"><property name="text"><string>5 min</string></property></widget></item>
+         <item><widget class="QCheckBox" name="checkBox_10min"><property name="text"><string>10 min</string></property></widget></item>
+         <item><widget class="QCheckBox" name="checkBox_15min"><property name="text"><string>15 min</string></property></widget></item>
+         <item><widget class="QCheckBox" name="checkBox_20min"><property name="text"><string>20 min</string></property></widget></item>
+         <item><widget class="QCheckBox" name="checkBox_30min"><property name="text"><string>30 min</string></property></widget></item>
+         <item><widget class="QCheckBox" name="checkBox_1h"><property name="text"><string>1 godz</string></property></widget></item>
+         <item><widget class="QCheckBox" name="checkBox_2h"><property name="text"><string>2 godz</string></property></widget></item>
+         <item><widget class="QCheckBox" name="checkBox_6h"><property name="text"><string>6 godz</string></property></widget></item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayoutLabels">
+         <item><widget class="QLabel" name="label_2min"><property name="text"><string/></property></widget></item>
+         <item><widget class="QLabel" name="label_3min"><property name="text"><string/></property></widget></item>
+         <item><widget class="QLabel" name="label_5min"><property name="text"><string/></property></widget></item>
+         <item><widget class="QLabel" name="label_10min"><property name="text"><string/></property></widget></item>
+         <item><widget class="QLabel" name="label_15min"><property name="text"><string/></property></widget></item>
+         <item><widget class="QLabel" name="label_20min"><property name="text"><string/></property></widget></item>
+         <item><widget class="QLabel" name="label_30min"><property name="text"><string/></property></widget></item>
+         <item><widget class="QLabel" name="label_1h"><property name="text"><string/></property></widget></item>
+         <item><widget class="QLabel" name="label_2h"><property name="text"><string/></property></widget></item>
+         <item><widget class="QLabel" name="label_6h"><property name="text"><string/></property></widget></item>
+         <item><widget class="QLabel" name="label_none"><property name="text"><string/></property></widget></item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonAdd">
+      <property name="text">
+       <string>Dodaj</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
